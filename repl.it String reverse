@@ -1,0 +1,20 @@
+// Write a for loop that will print out the reverse of the string.
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner inp = new Scanner(System.in);
+    System.out.print("In:");
+    String s = inp.nextLine();
+    //write your code below
+    int x = s.length();
+    char[] y = s.toCharArray();
+    
+    for (int i = x; i > 0; i--) {
+      System.out.print(s.charAt(x-1));
+      x--;
+    }
+  }
+}
