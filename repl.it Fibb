@@ -1,0 +1,23 @@
+// The fibonacci sequence is a sequence of numbers in which the next number is the sum of the previous two numbers.
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner inp = new Scanner(System.in);
+    System.out.print("In:");
+    int x = inp.nextInt();
+   	//write your code below
+   	int n1 = 0;
+   	int n2 = 1;
+   	System.out.print(n1 + " " + n2 +" ");
+   	
+   	for (int i = 2; i < x; i++) {
+   	  int n3 = n2+n1;
+   	  System.out.print(n3 + " ");
+   	  n1 = n2;
+   	  n2 = n3;
+   	}
+  }
+}
