@@ -1,0 +1,44 @@
+/* Simple calculator which split one String and converts them to Integer */
+
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner inp = new Scanner(System.in);
+    System.out.print("In:");
+    String exp = inp.nextLine();
+    //write your code below:
+
+    if (exp.contains("-")) {
+      String[] y = exp.split("-");
+      int a = Integer.parseInt(y[0]);
+      int b = Integer.parseInt(y[1]);
+      System.out.println((a-b));
+    } 
+    else if (exp.contains("+")) {
+      String[] y1 = exp.split("\\+");
+      int a1 = Integer.parseInt(y1[0]);
+      int b1 = Integer.parseInt(y1[1]);
+      System.out.println((a1+b1));
+    } 
+    else if (exp.contains("*")) {
+      String[] y2 = exp.split("\\*");
+      int a2 = Integer.parseInt(y2[0]);
+      int b2 = Integer.parseInt(y2[1]);
+      System.out.println((a2*b2));
+    } 
+    else if (exp.contains("/")) {
+      String[] y3 = exp.split("\\/");
+      int a3 = Integer.parseInt(y3[0]);
+      int b3 = Integer.parseInt(y3[1]);
+      System.out.println((a3/b3));
+    } 
+    else if (exp.contains("%")) {
+      String[] y4 = exp.split("%");
+      int a4 = Integer.parseInt(y4[0]);
+      int b4 = Integer.parseInt(y4[1]);
+      System.out.println((a4%b4));
+    } 
+  }
+}
