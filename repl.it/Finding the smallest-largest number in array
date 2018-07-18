@@ -17,3 +17,26 @@ class Main
 		return smallest; 
 	}
 }
+
+//string
+
+class Main
+{
+	public static void main(String[] args) 
+	{
+		String[] arr = {"yoloolololololoyoloolololololo","yo","hi","this is long"};
+		System.out.println(maxLength(arr));
+		//should print "this is long"
+	}
+	public static String maxLength(String[] words)
+	{
+		String largest = words[0];
+    
+	  for (int i = 1; i < words.length; i++) {
+	    if (words[i].length() > largest.length()) {
+	      largest = words[i]; 
+	    }
+	  }
+		return largest; 
+	}
+}
