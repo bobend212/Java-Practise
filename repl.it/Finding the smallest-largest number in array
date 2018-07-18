@@ -1,0 +1,19 @@
+class Main
+{
+	public static void main(String[] args) 
+	{
+		int[] arr = {5,12,-3,7,3,22};
+		System.out.println(minValue(arr)); //should print -3
+	}
+	public static int minValue(int[] nums)
+	{
+	  int smallest = nums[0];
+    
+	  for (int i = 1; i < nums.length; i++) {
+	    if (nums[i] < smallest) {
+	      smallest = nums[i]; 
+	    }
+	  }
+		return smallest; 
+	}
+}
